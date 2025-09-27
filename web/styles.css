@@ -1,0 +1,48 @@
+:root{
+  --brand: #0d6efd;
+  --ink: #1f2937;
+}
+
+body{ color: var(--ink); }
+
+.hero-blur{
+  position:absolute; inset:-20% -10% auto -10%; height:320px;
+  background: radial-gradient(600px 120px at 20% 50%, #cfe4ff 0, transparent 70%),
+              radial-gradient(600px 120px at 80% 50%, #e6f0ff 0, transparent 70%);
+  filter: blur(30px); opacity:.9; pointer-events:none;
+}
+
+.navbar-brand{ letter-spacing:.5px; }
+.navbar .nav-link.active{ color: var(--brand)!important; font-weight:600; }
+
+.card.thread-card{ border:1px solid rgba(0,0,0,.06); }
+.thread-title{ font-size:1.05rem; }
+
+.badge-category{
+  background: #f1f5f9; color:#0f172a; border:1px solid #e5e7eb;
+}
+
+.avatar{
+  width:40px; height:40px; border-radius:50%;
+  background:#e9ecef; display:flex; align-items:center; justify-content:center;
+  font-weight:600; color:#495057;
+}
+
+.profile-avatar{
+  background: linear-gradient(180deg, #eff6ff, #ffffff);
+  border: 1px solid #e2e8f0; height: 180px;
+}
+.profile-avatar span{ font-size:56px; color:#0d47a1; }
+
+.btn-soft{
+  background:#f1f5f9; border:1px solid #e5e7eb;
+}
+.btn-soft:hover{ background:#e9eef6; }
+
+.list-group-item .actions{ opacity:0; transition:.15s; }
+.list-group-item:hover .actions{ opacity:1; }
+
+#commentList .comment{
+  border:1px solid #eef2f7; background:#fff;
+  border-radius:.75rem; padding:12px 14px;
+}
